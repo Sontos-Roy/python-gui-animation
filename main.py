@@ -25,7 +25,7 @@ class LoadingSplash:
 
     #loader animation:
     def play_animation(self):
-        for i in range(200):
+        for i in range(5):
             for j in range(16):
                 #make bloack yellow:
                 Label(self.root, bg="#FFBD09", width=2, height=1).place(x=(j+22)*22, y=350)
@@ -33,7 +33,7 @@ class LoadingSplash:
                 self.root.update_idletasks()
                 #make block dark:   
                 Label(self.root,bg="#1F2732", width=2, height=1).place(x=(j+22)*22, y=350)
-
+        
         else:
             self.root.destroy()
             exit(0)
